@@ -1,0 +1,21 @@
+<html >
+
+<head>
+    <title>Hello Angular</title>
+
+</head>
+<!--inicializamos nosso app
+    com ng-app-->
+
+<body ng-app>
+    <div>
+        <!--usamos o ng-model para recuperar
+            o dado digitado-->
+        <input type="text" placeholder="Digite seu nome" ng-model="nome" />
+        <!--para fazer onway databinding usamos :: -->
+        <output>{{::nome}}</output>
+    </div>
+    <script src="bower_components/angular/angular.min.js"></script>
+</body>
+
+</html>
